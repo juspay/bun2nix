@@ -53,7 +53,7 @@ in
             # so import them into the store with a sanitized name.
             safePatchFile = builtins.path {
               path = patchFile;
-              name = sanitizeName (baseNameOf (toString patchFile));
+              name = builtins.unsafeDiscardStringContext (sanitizeName (baseNameOf (toString patchFile)));
             };
           in
           pkg:
