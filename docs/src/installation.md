@@ -6,3 +6,4 @@ This can be set up in two ways:
 
 - [From a template](./template-installation.md)
 - [In a pre-existing Flake](./flake-installation.md)
+- [Standalone API (no flake-parts)](./standalone.md)
